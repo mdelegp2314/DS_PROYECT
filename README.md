@@ -1,7 +1,7 @@
 # Proyecto Data Science 
 ## Integrantes: Sebastian Tapia, Mathias Deleg, Alejandro Peña 
 
-# Proyecto EDEMNU: Analisis de la satisfacción laboral en el Ecuador y como se ve afectado el submuestra del empleo formal en relación a la muestra completa
+# Proyecto EDEMNU: Analisis de la satisfacción laboral en el Ecuador y como se ve afectado la submuestra del empleo formal en relación a la muestra completa
 
 ### Descripción del proyecto
 

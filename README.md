@@ -21,7 +21,7 @@ Se realiza un preprocesamiento de los datos, incluyendo el manejo de valores fal
 Se llevan a cabo análisis descriptivos y visualizaciones para comprender mejor las características de los datos. Especificamente se analizan visualmente las relaciones entre ingreso laboral, satisfaccion laboral, años de educación, nivel de educación, tipo de contrato, estado civil, entre otras. Se generaron gráficos de barras para variables como género, estado civil, categoría de ocupación, tipo de contrato y nivel de satisfacción laboral. Estos gráficos permiten visualizar la distribución de frecuencias de cada categoría dentro de esas variables. Por ejemplo, se observó que la mayoría de las personas en la muestra completa están casadas o solteras, mientras que en el subconjunto de trabajo formal, la mayoría están casadas. Estos análisis brindan una comprensión inicial de las características demográficas y laborales de la población estudiada. Se utilizaron gráficos de dispersión (scatter plots) y gráficos de regresión lineal para explorar las relaciones entre variables numéricas. Por ejemplo, se analizó la relación entre edad e ingresos laborales, años de educación e ingresos, y horas de trabajo semanales e ingresos. Estos análisis revelaron relaciones positivas entre estas variables, lo que sugiere que a mayor edad, mayor nivel educativo y más horas de trabajo, mayores son los ingresos laborales. Sin embargo, también se observó una gran dispersión en los datos, indicando la presencia de otros factores que influyen en los ingresos. Se exploraron las relaciones entre la satisfacción laboral y otras variables como el nivel de instrucción y el tipo de contrato. Se utilizaron gráficos de dispersión y diagramas de caja y bigotes (box plots) para visualizar estas relaciones. Los resultados sugieren que, en general, a mayor nivel de instrucción, mayor es la satisfacción laboral. Además, las personas con contratos permanentes tienden a estar más satisfechas en comparación con aquellas con contratos temporales.Se realizaron tareas de limpieza y transformación de datos, como el manejo de valores faltantes, la codificación de variables categóricas y la creación de nuevas variables. Se eliminaron los valores atípicos (outliers) en variables como ingresos laborales y horas de trabajo semanales para evitar que influyan de manera desproporcionada en los análisis posteriores.
 
 - ### Modelado:
-Se utiliza un modelo de OPROBIT para examinar la relación entre la satisfacción laboral y variables explicativas como ingresos, educación, edad, horas de trabajo y estado civil. El modelo probit ordenado es una técnica estadística utilizada para analizar datos con una variable dependiente ordinal, es decir, una variable que toma valores en categorías ordenadas (por ejemplo, bajo, medio, alto). La ecuación del modelo es:
+Se utiliza un modelo de OPROBIT para examinar la relación entre la satisfacción laboral y variables explicativas como ingresos, educación, edad, horas de trabajo y estado civil. Se utilizo un modelo probit ordenado ya que es una técnica estadística utilizada para analizar datos con una variable dependiente ordinal, es decir, una variable que toma valores en categorías ordenadas (por ejemplo, bajo, medio, alto). La ecuación del modelo es:
 
 y*_i = β_0 + β_1x_i1 + β_2x_i2 + ... + β_kx_ik + ε_i
 
@@ -45,9 +45,9 @@ donde J es el número de categorías ordenadas y α_j son los umbrales a estimar
   
 - En la muestra completa, la mayoría de las personas están casadas o solteras, mientras que en el subconjunto de trabajo formal, la mayoría están casadas.
   
-- En la muestra completa, la categoría más común es "empleado privado", seguida de "cuenta propia". En el subconjunto de trabajo formal, la categoría predominante es "empleado privado".
+- En la muestra completa, la categoría más común es "empleado privado", seguida de "cuenta propia". En el subconjunto de trabajo formal, la categoría predominante    es "empleado privado".
   
-- En la muestra completa, la mayoría de las personas tienen contratos temporales o permanentes. En el subconjunto de trabajo formal, la mayoría tiene contratos permanentes.
+- En la muestra completa, la mayoría de las personas tienen contratos temporales o permanentes. En el subconjunto de trabajo formal, la mayoría tiene contratos       permanentes.
   
 - Tanto en la muestra completa como en el subconjunto de trabajo formal, la mayoría de las personas se encuentran "contentas" en su trabajo.
   
@@ -55,11 +55,11 @@ donde J es el número de categorías ordenadas y α_j son los umbrales a estimar
   
 - Existe una relación positiva entre los años de educación y los ingresos laborales.
   
-- Se aprecia una relación positiva entre las horas de trabajo semanales y los ingresos laborales.
+- Se aprecia una relación positiva entre las horas de trabajo semanales y los ingresos laborales. Para toda la muestra. 
   
-- En general, a mayor nivel de instrucción, mayor satisfacción laboral.
+- En general, a mayor nivel de instrucción, mayor satisfacción laboral. Sin grandes variaciones entre el subconjunto y toda la muestra. 
 
-- Relación entre tipo de contrato y satisfacción laboral: Las personas con contratos permanentes tienden a estar más satisfechas en comparación con aquellas con contratos temporales.
+- Las personas con contratos permanentes tienden a estar más satisfechas en comparación con aquellas con contratos temporales.
 
 ### Bases de datos utilizadas
 Las bases de datos utilizadas en este proyecto provienen de la Encuesta Nacional de Empleo, Desempleo y Subempleo (ENEMDU) realizada por el Instituto Nacional de Estadística y Censos (INEC) de Ecuador. Se trabajó con las siguientes bases de datos:

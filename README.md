@@ -15,7 +15,24 @@ El objetivo principal de este proyecto es analizar la relación entre diversos f
 Se utilizaron la bases dadas al inicio del curso. Se cargan los conjuntos de datos de la ENEMDU correspondientes a diferentes períodos del año 2020 y 2021, 1 año de datos en total desde septiembre de 2020 hasta septiembre de 2021. 
 
 - ### Limpieza y transformación de datos:
-Se realiza un preprocesamiento de los datos, incluyendo el manejo de valores faltantes, codificación de variables categóricas y la creación de nuevas variables. Adicionalmente, dada la extensa cantidad de información unimos todas las bases en un documento llamado filename.csv que es la base principal que se utilizara a lo largo de la investigación. Tambien, Se separa esta base en df1 que engloba toda la muestra y en df_trabajo_formal que engloba unicamente a las observaciones que pertenecen a trabajo formal. Se realiza balanceo de la base eliminando missing values y dejando observaciones con información completa. 
+Se realiza un preprocesamiento de los datos, incluyendo el manejo de valores faltantes, codificación de variables categóricas y la creación de nuevas variables. Adicionalmente, dada la extensa cantidad de información unimos todas las bases en un documento llamado filename.csv que es la base principal que se utilizara a lo largo de la investigación. Tambien, Se separa esta base en df1 que engloba toda la muestra y en df_trabajo_formal que engloba unicamente a las observaciones que pertenecen a trabajo formal. Se realiza balanceo de la base eliminando missing values y dejando observaciones con información completa. Finalmente nos quedamos unicamente con las variables de interes: 
+* Area
+* Unidad primaria de muestreo (upm)
+* Persona (p01)
+* sexo (p02)
+* edad (p03)
+* estado civil (p06)
+* nivel de instrucción (p10a)
+* año aprobado (p10b)
+* trabajó la semana pasada (p20)
+* horas de trabajo (p24)
+* categoría de ocupación (p42)
+* tipo contrato (p43)
+* recibe seguro social (p44f)
+* trabaja en un establecimiento con RUC (p49)
+* recibe 13er sueldo (p44j)
+* Cómo se siente en su trabajo (p59)
+* ingresos laborales (ingrl)
 
 - ### Análisis exploratorio de datos:
 Se llevan a cabo análisis descriptivos y visualizaciones para comprender mejor las características de los datos. Especificamente se analizan visualmente las relaciones entre ingreso laboral, satisfaccion laboral, años de educación, nivel de educación, tipo de contrato, estado civil, entre otras. Se generaron gráficos de barras para variables como género, estado civil, categoría de ocupación, tipo de contrato y nivel de satisfacción laboral. Estos gráficos permiten visualizar la distribución de frecuencias de cada categoría dentro de esas variables. Por ejemplo, se observó que la mayoría de las personas en la muestra completa están casadas o solteras, mientras que en el subconjunto de trabajo formal, la mayoría están casadas. Estos análisis brindan una comprensión inicial de las características demográficas y laborales de la población estudiada. Se utilizaron gráficos de dispersión (scatter plots) y gráficos de regresión lineal para explorar las relaciones entre variables numéricas. Por ejemplo, se analizó la relación entre edad e ingresos laborales, años de educación e ingresos, y horas de trabajo semanales e ingresos. Estos análisis revelaron relaciones positivas entre estas variables, lo que sugiere que a mayor edad, mayor nivel educativo y más horas de trabajo, mayores son los ingresos laborales. Sin embargo, también se observó una gran dispersión en los datos, indicando la presencia de otros factores que influyen en los ingresos. Se exploraron las relaciones entre la satisfacción laboral y otras variables como el nivel de instrucción y el tipo de contrato. Se utilizaron gráficos de dispersión y diagramas de caja y bigotes (box plots) para visualizar estas relaciones. Los resultados sugieren que, en general, a mayor nivel de instrucción, mayor es la satisfacción laboral. Además, las personas con contratos permanentes tienden a estar más satisfechas en comparación con aquellas con contratos temporales.Se realizaron tareas de limpieza y transformación de datos, como el manejo de valores faltantes, la codificación de variables categóricas y la creación de nuevas variables. Se eliminaron los valores atípicos (outliers) en variables como ingresos laborales y horas de trabajo semanales para evitar que influyan de manera desproporcionada en los análisis posteriores.
@@ -77,11 +94,10 @@ inec_enemdu_persona_2021_agosto.csv: Contiene datos de las personas encuestadas 
 inec_enemdu_persona_2021_septiembre.csv: Contiene datos de las personas encuestadas en septiembre de 2021.
 
 Estas bases de datos contienen información sobre características demográficas, nivel educativo, situación laboral, ingresos, satisfacción laboral, entre otras variables relevantes para el análisis. Se realizó un proceso de limpieza, transformación y combinación de estas bases de datos para obtener un conjunto de datos consolidado para el análisis.
-
 ### Instrucciones de instalación y ejecución
 
-Clona este repositorio en tu máquina local.
-Asegúrate de tener instalado Python 3.x y las siguientes librerías:
+1.- Clona este repositorio en tu máquina local.
+2.- Asegúrate de tener instalado Python 3.11.5 y las siguientes librerías:
 
 - pandas
 - numpy
@@ -91,8 +107,8 @@ Asegúrate de tener instalado Python 3.x y las siguientes librerías:
 - statsmodels
 
 
-Coloca los archivos de datos de la ENEMDU en la carpeta "bases" dentro del directorio del proyecto.
-Ejecuta el script EDEMNU.py en tu entorno de desarrollo de Python.
+3.- Coloca los archivos de datos de la ENEMDU en la carpeta "bases" dentro del directorio del proyecto.
+4.- Ejecuta el script EDEMNU.py en tu entorno de desarrollo de Python.
 
 ### Dependencias y librerías
 

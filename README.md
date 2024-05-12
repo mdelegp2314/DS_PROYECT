@@ -97,6 +97,7 @@ Estas bases de datos contienen información sobre características demográficas
 ### Instrucciones de instalación y ejecución
 
 1.- Clona este repositorio en tu máquina local.
+
 2.- Asegúrate de tener instalado Python 3.11.5 y las siguientes librerías:
 
 - pandas
@@ -107,8 +108,9 @@ Estas bases de datos contienen información sobre características demográficas
 - statsmodels
 
 
-3.- Coloca los archivos de datos de la ENEMDU en la carpeta "bases" dentro del directorio del proyecto.
-4.- Ejecuta el script EDEMNU.py en tu entorno de desarrollo de Python.
+3.- Copia el directorio en donde se clonaron las bases dela ENEMDU. 
+
+4.- Ejecuta el script EDEMNU.py en tu entorno de desarrollo de Python y en la segunda linea de codigo remplaza path = " la direccion del directorio donde estan las bases" 
 
 ### Dependencias y librerías
 
@@ -119,5 +121,7 @@ Estas bases de datos contienen información sobre características demográficas
 - seaborn: Para visualización de datos estadísticos.
 
 - matplotlib: Para crear gráficos y visualizaciones.
+
 - scipy: Para funciones científicas y de estadística.
+
 - statsmodels: Para modelos estadísticos y econométricos.

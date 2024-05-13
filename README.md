@@ -1,13 +1,13 @@
 # Proyecto Data Science 
 ## Integrantes: Sebastian Tapia, Mathias Deleg, Alejandro Peña 
 
-# Proyecto EDEMNU: Analisis de la satisfacción laboral en el Ecuador y como se ve afectado la submuestra del empleo formal en relación a la muestra completa
+# Proyecto EDEMNU: Analisis de la satisfacción laboral en el Ecuador
 
 ### Descripción del proyecto
 
 - ### Objetivo
 
-El objetivo principal de este proyecto es analizar la relación entre diversos factores socioeconómicos y la satisfacción laboral de las personas en Ecuador, utilizando los datos de la Encuesta Nacional de Empleo, Desempleo y Subempleo (ENEMDU) realizada por el Instituto Nacional de Estadística y Censos (INEC) de Ecuador. A si como analizar las diferencias con el sector del empleo formal y si este subconjunto presenta diferencias significativas con la muestra en general. 
+El objetivo principal de este proyecto es analizar la relación entre diversos factores socioeconómicos y la satisfacción laboral de las personas en Ecuador, utilizando los datos de la Encuesta Nacional de Empleo, Desempleo y Subempleo (ENEMDU) realizada por el Instituto Nacional de Estadística y Censos (INEC) de Ecuador. Así como analizar las diferencias con el sector del empleo formal y si este subconjunto presenta diferencias significativas con la muestra en general. 
 
 ### Metodología
 
@@ -15,7 +15,7 @@ El objetivo principal de este proyecto es analizar la relación entre diversos f
 Se utilizaron la bases dadas al inicio del curso. Se cargan los conjuntos de datos de la ENEMDU correspondientes a diferentes períodos del año 2020 y 2021, 1 año de datos en total desde septiembre de 2020 hasta septiembre de 2021. 
 
 - ### Limpieza y transformación de datos:
-Se realiza un preprocesamiento de los datos, incluyendo el manejo de valores faltantes, codificación de variables categóricas y la creación de nuevas variables. Adicionalmente, dada la extensa cantidad de información unimos todas las bases en un documento llamado filename.csv que es la base principal que se utilizara a lo largo de la investigación. Tambien, Se separa esta base en df1 que engloba toda la muestra y en df_trabajo_formal que engloba unicamente a las observaciones que pertenecen a trabajo formal. Se realiza balanceo de la base eliminando missing values y dejando observaciones con información completa. Finalmente nos quedamos unicamente con las variables de interes: 
+Se realiza un preprocesamiento de los datos, incluyendo el manejo de valores faltantes, codificación de variables categóricas y la creación de nuevas variables. Adicionalmente, dada la extensa cantidad de información unimos todas las bases en un documento llamado filename.csv que es la base principal que se utilizara a lo largo de la investigación. Tambien, Se separa esta base en df1 que engloba toda la muestra y en df_trabajo_formal que mantiene unicamente a las observaciones que pertenecen a individuos con trabajo formal. Se realiza balanceo de la base eliminando missing values y dejando observaciones con información completa. Finalmente nos quedamos unicamente con las variables de interes: 
 * Area
 * Unidad primaria de muestreo (upm)
 * Persona (p01)
@@ -98,7 +98,7 @@ Estas bases de datos contienen información sobre características demográficas
 
 1.- Clona este repositorio en tu máquina local.
 
-2.- Asegúrate de tener instalado Python 3.11.5 y las siguientes librerías:
+2.- Asegúrate de tener instalado Python 3.11.5 y las siguientes librerías (el kernel utilizado fue base Anaconda):
 
 - pandas
 - numpy
